@@ -1,4 +1,4 @@
-## Matrix Determinant Calculator in C
+
 
 ### Description
 
