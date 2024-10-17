@@ -176,7 +176,7 @@ elif score >= 150:
 print("Very good!")
 elif score >= 120:
 print("Good effort!")
-elif score >= 90:
+elif score >= 80:
 print("Fair. You can improve!")
 else:
 print("Fail! Advise to withdraw!")
