@@ -1,0 +1,183 @@
+# Quiz Program
+
+# Dictionary with questions, options, and answers
+quiz_questions = {
+   1. "What is the capital of Nigeria?": {
+        "A": "Berlin",
+        "B": "Abuja",
+        "C": "London",
+        "D": "Rome",
+        "Answer": "B"
+    },
+   2. "if the distance between (2,L) and (-2,0) is 5.find L?": {
+        "A": "3",
+        "B": "±3",
+        "C": "5",
+        "D": "-3",
+        "Answer": "B"
+    },
+   3. "Who painted the Mona Lisa?": {
+        "A": "Leonardo da Vinci",
+        "B": "Michelangelo",
+        "C": "Raphael",
+        "D": "Caravaggio",
+        "Answer": "A"
+    },
+   4. "What is 2 + 2?": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6",
+        "Answer": "B"
+    },
+   5. "Which language is this script written in?": {
+        "A": "Java",
+        "B": "Python",
+        "C": "C++",
+        "D": "JavaScript",
+        "Answer": "B"
+    },
+   6. "The middle term of a set of numbers arranged in order of size is called?": {
+        "A": "Median",
+        "B": "Mean",
+        "C": "Mode",
+        "D": "middle",
+        "Answer": "A"
+    },
+   7. "Who wrote Romeo and Juliet?": {
+        "A": "William Shakespeare",
+        "B": "Charles Dickens",
+        "C": "Jane Austen",
+        "D": "J.K. Rowling",
+        "Answer": "A"
+    },
+   8. "What is the chemical symbol for gold?": {
+        "A": "Ag",
+        "B": "Au",
+        "C": "Hg",
+        "D": "Pb",
+        "Answer": "B"
+    },
+   9. "The difference between the highest and lowest values in a set of data is?": {
+        "A": "median",
+        "B": "Range",
+        "C": "Mode",
+        "D": "Mean",
+        "Answer": "B"
+    },
+   10. "The number of times a particular number occur in a set of data is?": {
+        "A": "Frequency",
+        "B": "Range",
+        "C": "Mode",
+        "D": "Median",
+        "Answer": "A"
+    },
+   11. "What is 6 × 6?": {
+        "A": "66",
+        "B": "46",
+        "C": "76",
+        "D": "36",
+        "Answer": "D"
+    },
+   12. "What is the largest planet in our solar system?": {
+        "A": "Jupiter",
+        "B": "Saturn",
+        "C": "Uranus",
+        "D": "Neptune",
+        "Answer": "A"
+    },
+   13. "Which company developed the Windows operating system?": {
+        "A": "Microsoft",
+        "B": "Apple",
+        "C": "Google",
+        "D": "Amazon",
+        "Answer": "A"
+    },
+   14. "Obtain the equation of the straight line joining the points							                 
+			(1,-2) and (-1,4)?": {
+        "A": "3x+y-5",
+        "B": "3x+y+5",
+        "C": "3x+y=1",
+        "D": "y+3x+c",
+        "Answer": "C"
+    },
+   15. "What is the chemical symbol for silver?": {
+        "A": "Ag",
+        "B": "Au",
+        "C": "Hg",
+        "D": "Pb",
+        "Answer": "A"
+    },
+   16. "What is the name of the current Nigeria President?": {
+        "A": "Vincent van Gogh",
+        "B": "Bola Ahmed Tinubu",
+        "C": "Pablo Picasso",
+        "D": "Seyi Makinde",
+        "Answer": "B"
+    },
+   17. "The first academic session of Lautech begins on?": {
+        "A": "19th October, 1995",
+        "B": "19th October, 1994",
+        "C": "19th October, 1991",
+        "D": "19th October, 1990",
+        "Answer": "D"
+    },
+    18. "Nigeria Independence day is annually celebrated on?": {
+        "A": "1st, October",
+        "B": "28th May",
+        "C": "25th December",
+        "D": "13th March",
+        "Answer": "A"
+		},
+    19.	"What's the full meaning of 'GPA'?": {
+  			 "A": "Grade Point Aggregate",
+  			 "B": "Grand Point Aggregate",
+  			 "C": "Graced Point Aggregate",
+  			 "D": "Grade Pass Average",
+  			 "Answer": "A"
+		},
+	  20."50 + 50?": {
+  			 "A": "5050",
+  			 "B": "110",
+  			 "C": "100",
+  			 "D": "5500",
+  			"Answer": "C"
+}
+```
+}
+
+Initialize score
+score = 0
+
+Iterate through questions
+for question, options in quiz_questions.items():
+print(question)
+for option, value in options.items():
+if option != "Answer":
+print(f"{option}: {value}")
+
+```# Get user answer
+user_answer = input("Choose your answer (A/B/C/D): ")
+
+# Check if answer is correct
+if user_answer.upper() == options["Answer"]:
+    print("Correct!")
+    score += 10
+else:
+    print(f"Sorry, the correct answer is {options['Answer']}.")
+```
+Display final score
+print(f"\nQuiz finished! Your final score is {score} out of 200.")
+
+Grade the score
+if score >= 180:
+print("Excellent!")
+elif score >= 150:
+print("Very good!")
+elif score >= 120:
+print("Good effort!")
+elif score >= 90:
+print("Fair. You can improve!")
+else:
+print("Fail! Advise to withdraw!")
+
